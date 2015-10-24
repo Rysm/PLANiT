@@ -497,94 +497,6 @@
       "hash": "019cba9c67d18d17c34ea48a455d8956ded05487"
     },
     {
-      "path": "packages/iron_core.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/iron_core.js?b2f68eb0ae5bdc20eb7fd90373d995fe1908b980",
-      "sourceMap": "packages/iron_core.js.map",
-      "sourceMapUrl": "/packages/b2f68eb0ae5bdc20eb7fd90373d995fe1908b980.map",
-      "size": 32380,
-      "hash": "b2f68eb0ae5bdc20eb7fd90373d995fe1908b980"
-    },
-    {
-      "path": "packages/iron_dynamic-template.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/iron_dynamic-template.js?ebc5266f87a0be7618b1f690df32f1aa90ec89d7",
-      "sourceMap": "packages/iron_dynamic-template.js.map",
-      "sourceMapUrl": "/packages/ebc5266f87a0be7618b1f690df32f1aa90ec89d7.map",
-      "size": 85894,
-      "hash": "ebc5266f87a0be7618b1f690df32f1aa90ec89d7"
-    },
-    {
-      "path": "packages/iron_layout.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/iron_layout.js?9b12927a3224ccc6cd071e832e37aa4f11b83992",
-      "sourceMap": "packages/iron_layout.js.map",
-      "sourceMapUrl": "/packages/9b12927a3224ccc6cd071e832e37aa4f11b83992.map",
-      "size": 61385,
-      "hash": "9b12927a3224ccc6cd071e832e37aa4f11b83992"
-    },
-    {
-      "path": "packages/iron_url.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/iron_url.js?410da9bf2fb4b7ccf789a68539abfc6f1b8bd55a",
-      "sourceMap": "packages/iron_url.js.map",
-      "sourceMapUrl": "/packages/410da9bf2fb4b7ccf789a68539abfc6f1b8bd55a.map",
-      "size": 68881,
-      "hash": "410da9bf2fb4b7ccf789a68539abfc6f1b8bd55a"
-    },
-    {
-      "path": "packages/iron_middleware-stack.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/iron_middleware-stack.js?3370bd57ef7b310cca3f5dddb11b77fafdcfc1eb",
-      "sourceMap": "packages/iron_middleware-stack.js.map",
-      "sourceMapUrl": "/packages/3370bd57ef7b310cca3f5dddb11b77fafdcfc1eb.map",
-      "size": 46736,
-      "hash": "3370bd57ef7b310cca3f5dddb11b77fafdcfc1eb"
-    },
-    {
-      "path": "packages/iron_location.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/iron_location.js?a504b662036fee426fee61c89a00913fec9a3ef4",
-      "sourceMap": "packages/iron_location.js.map",
-      "sourceMapUrl": "/packages/a504b662036fee426fee61c89a00913fec9a3ef4.map",
-      "size": 51738,
-      "hash": "a504b662036fee426fee61c89a00913fec9a3ef4"
-    },
-    {
-      "path": "packages/iron_controller.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/iron_controller.js?20327f0adf618028f4e33ee2fc6d6af85b26fc9f",
-      "sourceMap": "packages/iron_controller.js.map",
-      "sourceMapUrl": "/packages/20327f0adf618028f4e33ee2fc6d6af85b26fc9f.map",
-      "size": 40598,
-      "hash": "20327f0adf618028f4e33ee2fc6d6af85b26fc9f"
-    },
-    {
-      "path": "packages/iron_router.js",
-      "where": "client",
-      "type": "js",
-      "cacheable": true,
-      "url": "/packages/iron_router.js?c564289eeaa191561eba900052037432ebfcbe4a",
-      "sourceMap": "packages/iron_router.js.map",
-      "sourceMapUrl": "/packages/c564289eeaa191561eba900052037432ebfcbe4a.map",
-      "size": 210335,
-      "hash": "c564289eeaa191561eba900052037432ebfcbe4a"
-    },
-    {
       "path": "packages/webapp.js",
       "where": "client",
       "type": "js",
@@ -666,42 +578,81 @@
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/packages/global-imports.js?88cb9f856235020f88046783a000fec8a66fc04d",
-      "size": 1256,
-      "hash": "88cb9f856235020f88046783a000fec8a66fc04d"
+      "url": "/packages/global-imports.js?e329c76d4f7daefb1cd8c1ecb6ae46676d7f3cad",
+      "size": 1124,
+      "hash": "e329c76d4f7daefb1cd8c1ecb6ae46676d7f3cad"
     },
     {
-      "path": "app/PLANiT_Interface.js",
+      "path": "app/template.planit.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/PLANiT_Interface.js?2e6f98c9d6039385db5e24c6ef215754f2f6bf03",
-      "sourceMap": "app/PLANiT_Interface.js.map",
-      "sourceMapUrl": "/app/2e6f98c9d6039385db5e24c6ef215754f2f6bf03.map",
-      "size": 992,
-      "hash": "2e6f98c9d6039385db5e24c6ef215754f2f6bf03"
+      "url": "/app/template.planit.js?8fb51275dc9a6fe6d6dd46894df40b5f223b9b5d",
+      "sourceMap": "app/template.planit.js.map",
+      "sourceMapUrl": "/app/8fb51275dc9a6fe6d6dd46894df40b5f223b9b5d.map",
+      "size": 896,
+      "hash": "8fb51275dc9a6fe6d6dd46894df40b5f223b9b5d"
+    },
+    {
+      "path": "app/template.planit_achieve.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/app/template.planit_achieve.js?60c8313ef7a3d314bea55340104a7831807cca6d",
+      "sourceMap": "app/template.planit_achieve.js.map",
+      "sourceMapUrl": "/app/60c8313ef7a3d314bea55340104a7831807cca6d.map",
+      "size": 491,
+      "hash": "60c8313ef7a3d314bea55340104a7831807cca6d"
+    },
+    {
+      "path": "app/template.planit_add.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/app/template.planit_add.js?73b90a0571c2aaed1afda44e5520400f646e55df",
+      "sourceMap": "app/template.planit_add.js.map",
+      "sourceMapUrl": "/app/73b90a0571c2aaed1afda44e5520400f646e55df.map",
+      "size": 827,
+      "hash": "73b90a0571c2aaed1afda44e5520400f646e55df"
+    },
+    {
+      "path": "app/template.planit_recom.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/app/template.planit_recom.js?e6032b1e6c4dbde4957d456058e33d58d504aa1d",
+      "sourceMap": "app/template.planit_recom.js.map",
+      "sourceMapUrl": "/app/e6032b1e6c4dbde4957d456058e33d58d504aa1d.map",
+      "size": 570,
+      "hash": "e6032b1e6c4dbde4957d456058e33d58d504aa1d"
     },
     {
       "path": "app/planit.js",
       "where": "client",
       "type": "js",
       "cacheable": true,
-      "url": "/app/planit.js?0e80a8613adb9595ec5af8e585f2e78fa47b80a8",
+      "url": "/app/planit.js?23345c1ddba1b0e5d961b6ef42671cd42bedd905",
       "sourceMap": "app/planit.js.map",
-      "sourceMapUrl": "/app/0e80a8613adb9595ec5af8e585f2e78fa47b80a8.map",
-      "size": 7446,
-      "hash": "0e80a8613adb9595ec5af8e585f2e78fa47b80a8"
+      "sourceMapUrl": "/app/23345c1ddba1b0e5d961b6ef42671cd42bedd905.map",
+      "size": 6316,
+      "hash": "23345c1ddba1b0e5d961b6ef42671cd42bedd905"
     },
     {
       "path": "merged-stylesheets.css",
       "where": "client",
       "type": "css",
       "cacheable": true,
-      "url": "/merged-stylesheets.css?3630edf4e7eb13f228ef347008243b16a288c4b6",
+      "url": "/merged-stylesheets.css?a7a92daa1b2c59f21eccd65935dc6ba4621df9a0",
       "sourceMap": "merged-stylesheets.css.map",
-      "sourceMapUrl": "/3630edf4e7eb13f228ef347008243b16a288c4b6.map",
-      "size": 2834,
-      "hash": "3630edf4e7eb13f228ef347008243b16a288c4b6"
+      "sourceMapUrl": "/a7a92daa1b2c59f21eccd65935dc6ba4621df9a0.map",
+      "size": 2786,
+      "hash": "a7a92daa1b2c59f21eccd65935dc6ba4621df9a0"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "ae5e9c228267e9ffe48d54e0a24c9a030792c4dd"
     }
   ]
 }

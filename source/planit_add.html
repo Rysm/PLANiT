@@ -1,0 +1,38 @@
+
+<!--Add courses-->
+<head>
+  <title>PLANiT</title>
+  <script src="planit.js" />
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js" />
+</head>
+
+<body>
+
+	<script>
+	$(document).ready(function(){
+	//generate the dropdown box
+	var sel = document.getElementById('ClassList');
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	}
+	});
+	
+	</script>
+	
+	<!-- Dropdown to select classes -->
+    <select id = "ClassList"> </select>
+  
+	
+	<p>
+		<code>
+			<input type="button" onclick="location.href='planit.html';" value="Return to Growth" />
+		</code>
+	</p>
+
+  </body>
+  <template name = "add">
+  </template>
+  

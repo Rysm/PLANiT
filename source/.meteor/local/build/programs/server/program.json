@@ -235,47 +235,6 @@
       "path": "packages/aldeed_collection2.js"
     },
     {
-      "sourceMap": "packages/templating.js.map",
-      "path": "packages/templating.js"
-    },
-    {
-      "sourceMap": "packages/iron_core.js.map",
-      "path": "packages/iron_core.js"
-    },
-    {
-      "sourceMap": "packages/iron_dynamic-template.js.map",
-      "path": "packages/iron_dynamic-template.js"
-    },
-    {
-      "sourceMap": "packages/iron_layout.js.map",
-      "path": "packages/iron_layout.js"
-    },
-    {
-      "sourceMap": "packages/iron_url.js.map",
-      "path": "packages/iron_url.js"
-    },
-    {
-      "sourceMap": "packages/iron_middleware-stack.js.map",
-      "path": "packages/iron_middleware-stack.js"
-    },
-    {
-      "sourceMap": "packages/iron_location.js.map",
-      "path": "packages/iron_location.js"
-    },
-    {
-      "sourceMap": "packages/reactive-dict.js.map",
-      "path": "packages/reactive-dict.js"
-    },
-    {
-      "sourceMap": "packages/iron_controller.js.map",
-      "path": "packages/iron_controller.js"
-    },
-    {
-      "node_modules": "/C/Users/Andy/AppData/Local/.meteor/packages/iron_router/1.0.12/npm/node_modules",
-      "sourceMap": "packages/iron_router.js.map",
-      "path": "packages/iron_router.js"
-    },
-    {
       "sourceMap": "packages/livedata.js.map",
       "path": "packages/livedata.js"
     },
@@ -288,6 +247,10 @@
       "path": "packages/launch-screen.js"
     },
     {
+      "sourceMap": "packages/templating.js.map",
+      "path": "packages/templating.js"
+    },
+    {
       "sourceMap": "packages/autoupdate.js.map",
       "path": "packages/autoupdate.js"
     },
@@ -297,10 +260,6 @@
     },
     {
       "path": "packages/global-imports.js"
-    },
-    {
-      "sourceMap": "app/PLANiT_Interface.js.map",
-      "path": "app/PLANiT_Interface.js"
     },
     {
       "sourceMap": "app/planit.js.map",

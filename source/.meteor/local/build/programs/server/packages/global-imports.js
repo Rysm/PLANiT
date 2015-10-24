@@ -7,8 +7,6 @@ Deps = Package.tracker.Deps;
 Date = Package['es5-shim'].Date;
 parseInt = Package['es5-shim'].parseInt;
 ECMAScript = Package.ecmascript.ECMAScript;
-Router = Package['iron:router'].Router;
-RouteController = Package['iron:router'].RouteController;
 Meteor = Package.meteor.Meteor;
 WebApp = Package.webapp.WebApp;
 main = Package.webapp.main;
@@ -27,7 +25,6 @@ Map = Package['ecmascript-collections'].Map;
 Set = Package['ecmascript-collections'].Set;
 SimpleSchema = Package['aldeed:simple-schema'].SimpleSchema;
 MongoObject = Package['aldeed:simple-schema'].MongoObject;
-Iron = Package['iron:core'].Iron;
 Autoupdate = Package.autoupdate.Autoupdate;
 HTML = Package.htmljs.HTML;
 

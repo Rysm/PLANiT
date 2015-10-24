@@ -2,8 +2,8 @@
 body {
   font-family: sans-serif;
   background-color: #FCFBE3;
-  /* background-image: linear-gradient(to bottom, #315481, #918e82 100%); */
   background-attachment: fixed;
+  font-family: 'Quicksand', sans-serif;
 
   position: absolute;
   top: 0;
@@ -27,9 +27,9 @@ body {
 
 header {
   background: #FCFBE3;
-  /* background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%); */
   padding: 20px 15px 15px 15px;
   position: relative;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #login-buttons {
@@ -37,7 +37,7 @@ header {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 20 px;
   margin: 0;
   margin-bottom: 10px;
   display: inline-block;
@@ -104,7 +104,8 @@ li.private {
 }
 
 header .hide-completed {
-  float: right;
+  float: right
+  font-family : quicksand;
 }
 
 .toggle-private {
