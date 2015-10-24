@@ -123,7 +123,7 @@ Templates for Forms
 
 //Dropdown form for classes
 Schemas.Select = new SimpleSchema({
-  Add a Class: {
+  AddClass: {
     type: String
   }
 });
@@ -132,11 +132,11 @@ Template.select.helpers({
   options: function () {
     return [
       {
-        //optgroup: "AP Classes",
+        optgroup: "AP Classes",
         options: [
           {label: "P.E.", value: "P.E."},
-          {label: "2013", value: "2013"},
-          {label: "2012", value: "2012"}
+          {label: "P.E.", value: "P.E."},
+          {label: "P.E.", value: "P.E."}
         ]
       },
     ];
