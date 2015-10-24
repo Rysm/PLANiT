@@ -1,6 +1,11 @@
 //Source code for scoring individual catalog courses
 
 //Written by Andy Wang
+
+/*
+Variable declarations
+*/
+
 var ap = 3, hnrs = 2, cp = 1;
 
 //Define the course catalog
@@ -112,26 +117,28 @@ var course =[classes,3]; //Seven classes max per schedule
 
 var name =0, difficulty =0;
 
-if (Meteor.isClient) {
-  // scheduled starts at 0
-  Session.setDefault('scheduled', 0);
+/*
+Templates for Forms
+*/
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('scheduled');
-    }
-  });
+//Dropdown form for classes
+Schemas.Select = new SimpleSchema({
+  Add a Class: {
+    type: String
+  }
+});
 
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('scheduled', Session.get('scheduled') + 1);
-    }
-  });
-}
-
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
+Template.select.helpers({
+  options: function () {
+    return [
+      {
+        //optgroup: "AP Classes",
+        options: [
+          {label: "P.E.", value: "P.E."},
+          {label: "2013", value: "2013"},
+          {label: "2012", value: "2012"}
+        ]
+      },
+    ];
+  }
+});

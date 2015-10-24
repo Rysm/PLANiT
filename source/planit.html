@@ -4,9 +4,15 @@
 
 <body>
 
-  <!-- insert a graphic title -->
+  <!-- Image File to Replace Text Title -->
   <h1>Welcome to PLANiT</h1>
   <img src= "logo.jpg">
-  <button>Add a Class</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</body>
+  
+  <!-- Dropdown to select classes -->
+  {{#autoForm id="selectForm" schema=Schemas.Select}}
+  {{> afFormGroup name="Add a Class" options=options}}
+  <button type="submit" class="btn btn-primary">Add Class</button>
+  {{/autoForm}}
+  
+  
+</body> 
