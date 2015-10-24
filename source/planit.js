@@ -47,6 +47,7 @@ var catalog = [
 ["AP Environmental Science",3],
 
 //Computers
+
 ["AP Computer Science",3],
 
 //English
@@ -79,25 +80,25 @@ var catalog = [
 ["Japanese 3",2],
 ["Japanese 4",2],
 ["AP Japanese",3],
-["French",1],
-["French",1],
-["French",2],
-["French",2],
+["French 1",1],
+["French 2",1],
+["French 3",2],
+["French 4",2],
 ["AP French",3],
 ["Chinese 1",1],
 ["Chinese 2",1],
 ["Chinese 3",1],
 ["Chinese 4",1],
 ["AP Chinese",3],
-["Vietnamese",1],
-["Vietnamese",1],
-["Vietnamese",2],
-["Vietnamese",2],
+["Vietnamese 1",1],
+["Vietnamese 2",1],
+["Vietnamese 3",2],
+["Vietnamese 4",2],
 ["AP Vietnamese",3],
 
 //Other electives
 ["Culinary Arts",1],
-["Culinary Arts II",1],
+["Culinary Arts 2",1],
 ["Digital Photography",1],
 ["Multimedia",1],
 ["Animation",1],
@@ -113,9 +114,9 @@ var catalog = [
 //courses individual array
 var classes = 1; 
 
-var course =[classes,3]; //Seven classes max per schedule
+var course = [classes,3]; //Seven classes max per schedule
 
-var name =0, difficulty =0;
+var name = 0, difficulty = 0;
 
 /*
 Templates for Forms
