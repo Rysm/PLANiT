@@ -123,7 +123,7 @@ Templates for Forms
 */
 
 //Dropdown form for classes
-Schemas.Select = new SimpleSchema({
+SelectSchema = new SimpleSchema({
   AddClass: {
     type: String
   }
