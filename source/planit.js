@@ -129,6 +129,7 @@ SelectSchema = new SimpleSchema({
   }
 });
 
+if (Meteor.isClient){
 Template.select.helpers({
   options: function () {
     return [
@@ -143,3 +144,4 @@ Template.select.helpers({
     ];
   }
 });
+}
