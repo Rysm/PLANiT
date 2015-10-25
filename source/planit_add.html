@@ -4,7 +4,6 @@
 <head>
   <title>PLANiT</title>
   <link rel="stylesheet" type="text/css" href="planit.css">
-  <script src="planit.js" />
   <script src="https://code.jquery.com/jquery-2.1.4.min.js" />
   <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
 </head>
@@ -46,12 +45,28 @@
 		Select Your Classes: <select id = "ClassList7"> </select>
 		<input type ="submit" value="Submit">
     </form>
+	
+	
 	<p>
 		<code>
 			<input type= "button" onclick="location.href='planit.html';" value="Return to Growth" />
 			</code>
 	</p>
 
+	<!-- Implemented a Javascript deferer-->
+	<script type="text/javascript">
+	
+	function downloadJSAtOnload() {
+		var element = document.createElement("script");
+			element.src = "planit.js";
+			document.body.appendChild(element);
+	}
+		if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+		else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+		else window.onload = downloadJSAtOnload;
+	</script>
   </body>
   </html>
   
