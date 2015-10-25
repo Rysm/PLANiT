@@ -108,6 +108,19 @@ var catalog = [
 "Computers",
 ];
 
+if (Meteor.isClient){
+	Meteor.startup(function(){
+	//generate the dropdown box
+	var sel = document.getElementById('ClassList');
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	}
+	});
+}
+	
 //end catalog array
 
 //courses individual array
@@ -116,14 +129,3 @@ var classes = 1;
 var course = [classes,3]; //Seven classes max per schedule
 
 var name = 0, difficulty = 0;
-
-//meteor template handler
-/*
-if (Meteor.isClient){
-//only run client-sided
-Template.body.helpers({
-
-
-});
-}
-*/

@@ -55,26 +55,28 @@ var catalog = [                                                        // 14
 /* "Art 2",1, */                                                       //
 "Geography", "Computers"];                                             // 107
                                                                        //
+if (Meteor.isClient) {                                                 // 111
+	Meteor.startup(function () {                                          // 112
+		//generate the dropdown box                                          //
+		var sel = document.getElementById('ClassList');                      // 114
+		for (var i = 0; i < catalog.length; i++) {                           // 115
+			var opt = document.createElement('option');                         // 116
+			opt.innerHTML = catalog[i];                                         // 117
+			opt.value = catalog[i];                                             // 118
+			sel.appendChild(opt);                                               // 119
+		}                                                                    //
+	});                                                                   //
+}                                                                      //
+                                                                       //
 //end catalog array                                                    //
                                                                        //
 //courses individual array                                             //
-var classes = 1;                                                       // 114
+var classes = 1;                                                       // 127
                                                                        //
-var course = [classes, 3]; //Seven classes max per schedule            // 116
+var course = [classes, 3]; //Seven classes max per schedule            // 129
                                                                        //
-var name = 0,                                                          // 118
+var name = 0,                                                          // 131
     difficulty = 0;                                                    //
-                                                                       //
-//meteor template handler                                              //
-/*                                                                     //
-if (Meteor.isClient){                                                  //
-//only run client-sided                                                //
-Template.body.helpers({                                                //
-                                                                       //
-                                                                       //
-});                                                                    //
-}                                                                      //
-*/                                                                     //
 /////////////////////////////////////////////////////////////////////////
 
 }).call(this);
