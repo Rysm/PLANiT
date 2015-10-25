@@ -14,6 +14,9 @@
 </head>
 
 <body>
+	<script type="javascript">
+	var scheduleRef = new Firebase('https://samplechat.firebaseio-demo.com/users');
+	</script>
 	
 	<!-- Dropdown to select classes -->
 	<form name = "periods" onsubmit = "testSelect(this.form)"> 
@@ -45,13 +48,15 @@
 		Select Your Period 6 Class: <select name = "period6" id = "ClassList6"> </select>
 		</div>
 		
+		<br>
 		<input type ="submit" value="Confirm">
-    
+		</br>
+		
 	</form>
 	
-	<p>
+	<br>
     <input type= "button" onClick="location.href='planit.html';" value="Return to Growth" />
-	</p>
+	</br>
 	
 	<script>
 	//generate the dropdown box
@@ -115,18 +120,31 @@
 	function testSelect (form) {
 		item0 = form.period0.selectedIndex;
 		result0 = form.period0.options[Item].text;
+		scheduleRef.set({ class: result0});
+		
 		item1 = form.period1.selectedIndex;
 		result1 = form.period1.options[Item].text;
+		scheduleRef.set({ class: result1});
+		
 		item2 = form.period2.selectedIndex;
 		result2 = form.period2.options[Item].text;
+		scheduleRef.set({ class: result2});
+		
 		item3 = form.period3.selectedIndex;
 		result3 = form.period3.options[Item].text;
+		scheduleRef.set({ class: result3});
+		
 		item4 = form.period4.selectedIndex;
 		result4 = form.period4.options[Item].text;
+		scheduleRef.set({ class: result4});
+		
 		item5 = form.period5.selectedIndex;
 		result5 = form.period5.options[Item].text;
+		scheduleRef.set({ class: result5});
+		
 		item6 = form.period6.selectedIndex;
 		result6 = form.period6.options[Item].text;
+		scheduleRef.set({ class: result6});
 		alert (Result);
 	}
 </script>
