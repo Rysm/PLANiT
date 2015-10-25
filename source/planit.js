@@ -74,7 +74,7 @@ var catalog = [
 "Spanish 2",
 "Spanish 3",
 "Spanish 4",
-"AP Spanish",,
+"AP Spanish",
 "Japanese 1",
 "Japanese 2",
 "Japanese 3",
@@ -103,27 +103,27 @@ var catalog = [
 "Multimedia",
 "Animation",
 "Art",
-/* "Art 2",1, */
 "Geography",
 "Computers",
 ];
 
-//end catalog array
+//array of courseweights
+var courseWeight=[1,1,1,2,1,1,2,1,2,1,3,3,1,3,1,2,3,1,1,2,3,1,1,2,3,1,2,3,3,3,1,1,2,3,3,1,1,3,1,3,3,3,3,1,1,2,3,3,1,1,2,3,3,1,1,2,3,3,1,1,2,3,3,1,1,2,3,3,1,2,1,1,1,1,1,2,3,3,1,1,2,3,1,1];
 
-//courses individual array
-var classes = 1; 
-
-var course = [classes,3]; //Seven classes max per schedule
-
-var name = 0, difficulty = 0;
-
-//meteor template handler
-/*
+//Meteor for days
 if (Meteor.isClient){
-//only run client-sided
-Template.body.helpers({
+
+	Meteor.startup(function(){
+	//generate the dropdown box
+	var sel = document.getElementById('ClassList');
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	}
+	});
 
 
-});
-}
-*/
+} 
+//end catalog array
