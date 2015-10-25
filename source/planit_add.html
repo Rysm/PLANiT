@@ -16,7 +16,7 @@
 <body>
 	
 	<!-- Dropdown to select classes -->
-	<form name = "periods" method = "get"> 
+	<form name = "periods" onsubmit = "testSelect(this.form)"> 
 		<div>
 		Select Your Period 0 Class: <select name = "period0" id = "ClassList0"> </select>
 		</div>
@@ -45,7 +45,7 @@
 		Select Your Period 6 Class: <select name = "period6" id = "ClassList6"> </select>
 		</div>
 		
-		<input type ="submit" value="Confirm" onClick = "testResults(this.form)">
+		<input type ="submit" value="Confirm">
     
 	</form>
 	
