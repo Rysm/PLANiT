@@ -59,57 +59,68 @@ var courseWeight = [1, 1, 1, 2, 1, 1, 2, 1, 2, 1, 3, 3, 1, 3, 1, 2, 3, 1, 1, 2, 
 //Meteor for days                                                      //
 if (Meteor.isClient) {                                                 // 114
                                                                        //
-  Meteor.startup(function () {                                         // 116
-    //generate the dropdown box                                        //
-    var sel = document.getElementById('ClassList');                    // 118
-    for (var i = 0; i < catalog.length; i++) {                         // 119
-      var opt = document.createElement('option');                      // 120
-      opt.innerHTML = catalog[i];                                      // 121
-      opt.value = catalog[i];                                          // 122
-      sel.appendChild(opt);                                            // 123
-    }                                                                  //
-  });                                                                  //
+	Meteor.startup(function () {                                          // 116
+		//generate the dropdown box                                          //
+		var sel = document.getElementById('ClassList');                      // 118
+		for (var i = 0; i < catalog.length; i++) {                           // 119
+			var opt = document.createElement('option');                         // 120
+			opt.innerHTML = catalog[i];                                         // 121
+			opt.value = catalog[i];                                             // 122
+			sel.appendChild(opt);                                               // 123
+		}                                                                    //
+                                                                       //
+		var sel = document.getElementById('ClassList2');                     // 126
+		for (var i = 0; i < catalog.length; i++) {                           // 127
+			var opt = document.createElement('option');                         // 128
+			opt.innerHTML = catalog[i];                                         // 129
+			opt.value = catalog[i];                                             // 130
+			sel.appendChild(opt);                                               // 131
+		}                                                                    //
+                                                                       //
+		var sel = document.getElementById('ClassList3');                     // 134
+		for (var i = 0; i < catalog.length; i++) {                           // 135
+			var opt = document.createElement('option');                         // 136
+			opt.innerHTML = catalog[i];                                         // 137
+			opt.value = catalog[i];                                             // 138
+			sel.appendChild(opt);                                               // 139
+		}                                                                    //
+                                                                       //
+		var sel = document.getElementById('ClassList4');                     // 142
+		for (var i = 0; i < catalog.length; i++) {                           // 143
+			var opt = document.createElement('option');                         // 144
+			opt.innerHTML = catalog[i];                                         // 145
+			opt.value = catalog[i];                                             // 146
+			sel.appendChild(opt);                                               // 147
+		}                                                                    //
+                                                                       //
+		var sel = document.getElementById('ClassList5');                     // 150
+		for (var i = 0; i < catalog.length; i++) {                           // 151
+			var opt = document.createElement('option');                         // 152
+			opt.innerHTML = catalog[i];                                         // 153
+			opt.value = catalog[i];                                             // 154
+			sel.appendChild(opt);                                               // 155
+		}                                                                    //
+                                                                       //
+		var sel = document.getElementById('ClassList6');                     // 158
+		for (var i = 0; i < catalog.length; i++) {                           // 159
+			var opt = document.createElement('option');                         // 160
+			opt.innerHTML = catalog[i];                                         // 161
+			opt.value = catalog[i];                                             // 162
+			sel.appendChild(opt);                                               // 163
+		}                                                                    //
+                                                                       //
+		var sel = document.getElementById('ClassList7');                     // 166
+		for (var i = 0; i < catalog.length; i++) {                           // 167
+			var opt = document.createElement('option');                         // 168
+			opt.innerHTML = catalog[i];                                         // 169
+			opt.value = catalog[i];                                             // 170
+			sel.appendChild(opt);                                               // 171
+		}                                                                    //
+	});                                                                   //
 }                                                                      //
 //end catalog array                                                    //
                                                                        //
-//Receiver of Class                                                    //
-function courseChoose(choose) {                                        // 132
-  var value = choose.value;                                            // 133
-}                                                                      //
-                                                                       //
-//Schedule Using Schema                                                //
-Schemas = {};                                                          // 137
-                                                                       //
-Template.registerHelper("Schemas", Schemas);                           // 139
-                                                                       //
-//Schedule Schema Declaration                                          //
-Schemas.Schedule = new SimpleSchema({                                  // 142
-  CourseName: {                                                        // 143
-    type: String,                                                      // 144
-    index: 1,                                                          // 145
-    unique: true                                                       // 146
-  }                                                                    //
-});                                                                    //
-                                                                       //
-var Collections = {};                                                  // 150
-                                                                       //
-Template.registerHelper("Collections", Collections);                   // 152
-                                                                       //
-Schedule = Collections.Schedule = new Mongo.Collection("Schedule");    // 154
-Schedule.attachSchema(Schemas.Schedule);                               // 155
-                                                                       //
-Meteor.publish(null, function () {                                     // 157
-  return Schedule.find();                                              // 158
-});                                                                    //
-                                                                       //
-Schedule.allow({                                                       // 161
-  insert: function () {                                                // 162
-    return true;                                                       // 163
-  },                                                                   //
-  remove: function () {                                                // 165
-    return true;                                                       // 166
-  }                                                                    //
-});                                                                    //
+//                                                                     //
 /////////////////////////////////////////////////////////////////////////
 
 }).call(this);

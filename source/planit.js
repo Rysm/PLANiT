@@ -122,8 +122,58 @@ if (Meteor.isClient){
 		opt.value = catalog[i];
 		sel.appendChild(opt);
 	}
+	
+	var sel = document.getElementById('ClassList2');
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	}
+	
+	var sel = document.getElementById('ClassList3');
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	}
+	
+	var sel = document.getElementById('ClassList4');
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	}
+	
+	var sel = document.getElementById('ClassList5');
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	}
+	
+	var sel = document.getElementById('ClassList6');
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	}
+	
+	var sel = document.getElementById('ClassList7');
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	}
 	});
 
 
 } 
 //end catalog array
+
+//
