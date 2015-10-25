@@ -9,6 +9,8 @@
 </head>
 
 <body>
+<body onload="myfunction()">
+	
 	
 	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
@@ -17,36 +19,47 @@
     </form>
 	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
-		Select Your Classes: <select id = "ClassList2"> </select>
+		Select Your Classes: <select id = "ClassList"> </select>
 		<input type ="submit" value="Submit">
     </form>
 	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
-		Select Your Classes: <select id = "ClassList3"> </select>
+		Select Your Classes: <select id = "ClassList"> </select>
 		<input type ="submit" value="Submit">
     </form>
 	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
-		Select Your Classes: <select id = "ClassList4"> </select>
+		Select Your Classes: <select id = "ClassList"> </select>
 		<input type ="submit" value="Submit">
     </form>
 	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
-		Select Your Classes: <select id = "ClassList5"> </select>
+		Select Your Classes: <select id = "ClassList"> </select>
 		<input type ="submit" value="Submit">
     </form>
 	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
-		Select Your Classes: <select id = "ClassList6"> </select>
+		Select Your Classes: <select id = "ClassList"> </select>
 		<input type ="submit" value="Submit">
     </form>
 	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
-		Select Your Classes: <select id = "ClassList7"> </select>
+		Select Your Classes: <select id = "ClassList"> </select>
 		<input type ="submit" value="Submit">
     </form>
 	
-	
+	<script>
+	$(function(){ 
+	var sel = document.getElementById('ClassList');
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+		alert("Page is loaded");
+	} 
+	})
+	</script>
 	<p>
 		<code>
 			<input type= "button" onclick="location.href='planit.html';" value="Return to Growth" />

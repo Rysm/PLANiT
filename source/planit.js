@@ -107,8 +107,8 @@ var catalog = [
 
 //array of courseweights
 var courseWeight=[1,1,1,2,1,1,2,1,2,1,3,3,1,3,1,2,3,1,1,2,3,1,1,2,3,1,2,3,3,3,1,1,2,3,3,1,1,3,1,3,3,3,3,1,1,2,3,3,1,1,2,3,3,1,1,2,3,3,1,1,2,3,3,1,1,2,3,3,1,2,1,1,1,1,1,2,3,3,1,1,2,3,1,1];
-
-	function filler(){
+	
+	function myfunction(){
 	//generate the dropdown box
 	var sel = document.getElementById('ClassList');
 	for(var i = 0; i < catalog.length; i++) {
@@ -166,6 +166,5 @@ var courseWeight=[1,1,1,2,1,1,2,1,2,1,3,3,1,3,1,2,3,1,1,2,3,1,1,2,3,1,2,3,3,3,1,
 		sel.appendChild(opt);
 	}
 	}
-	onload = filler;
 } 
 //end catalog array
