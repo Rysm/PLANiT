@@ -8,42 +8,49 @@
   <script src="schedule_add.js"/>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js" />
   <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+  
+
+
 </head>
 
 <body>
 	
 	<!-- Dropdown to select classes -->
-	<form> 
-		Select Your Classes: <select id = "ClassList"> </select>
-		<input type ="submit" value="Submit1">
-    </form>
-	<form> 
-		Select Your Classes: <select id = "ClassList2"> </select>
-		<input type ="submit" value="Submit2">
-    </form>
-	<form> 
-		Select Your Classes: <select id = "ClassList3"> </select>
-		<input type ="submit" value="Submit3">
-    </form>
-	<form > 
-		Select Your Classes: <select id = "ClassList4"> </select>
-		<input type ="submit" value="Submit4">
-    </form>
-	<form>
-		Select Your Classes: <select id = "ClassList5"> </select>
-		<input type ="submit" value="Submit5">
-    </form>
-	<form"> 
-		Select Your Classes: <select id = "ClassList6"> </select>
-		<input type ="submit" value="Submit6">
-    </form>
-	<form> 
-		Select Your Classes: <select id = "ClassList7"> </select>
-		<input type ="submit" value="Submit7">
-    </form>
+	<form name = "periods" method = "get"> 
+		<div>
+		Select Your Period 0 Class: <select name = "period0" id = "ClassList0"> </select>
+		</div>
+		
+		<div>
+		Select Your Period 1 Class: <select name = "period1" id = "ClassList"> </select>
+		</div>
+		
+		<div>
+		Select Your Period 2 Class: <select name = "period2" id = "ClassList2"> </select>
+		</div>
+		
+		<div>
+		Select Your Period 3 Class: <select name = "period3" id = "ClassList3"> </select>
+		</div>
+		
+		<div>
+		Select Your Period 4 Class: <select name = "period4" id = "ClassList4"> </select>
+		</div>
+		
+		<div>
+		Select Your Period 5 Class: <select name = "period5" id = "ClassList5"> </select>
+		</div>
+		
+		<div>
+		Select Your Period 6 Class: <select name = "period6" id = "ClassList6"> </select>
+		</div>
+		
+		<input type ="submit" value="Confirm" onClick = "testResults(this.form)">
+    
+	</form>
 	
 	<p>
-    <input type= "button" onclick="location.href='planit.html';" value="Return to Growth" />
+    <input type= "button" onClick="location.href='planit.html';" value="Return to Growth" />
 	</p>
 	
 	<script>
@@ -96,13 +103,33 @@
 		sel.appendChild(opt);
 	} 
 		//generate the dropdown box
-	var sel = document.getElementById("ClassList7");
+	var sel = document.getElementById("ClassList0");
 	for(var i = 0; i < catalog.length; i++) {
 		var opt = document.createElement('option');
 		opt.innerHTML = catalog[i];
 		opt.value = catalog[i];
 		sel.appendChild(opt);
 	} 
+	
+
+	function testSelect (form) {
+		item0 = form.period0.selectedIndex;
+		result0 = form.period0.options[Item].text;
+		item1 = form.period1.selectedIndex;
+		result1 = form.period1.options[Item].text;
+		item2 = form.period2.selectedIndex;
+		result2 = form.period2.options[Item].text;
+		item3 = form.period3.selectedIndex;
+		result3 = form.period3.options[Item].text;
+		item4 = form.period4.selectedIndex;
+		result4 = form.period4.options[Item].text;
+		item5 = form.period5.selectedIndex;
+		result5 = form.period5.options[Item].text;
+		item6 = form.period6.selectedIndex;
+		result6 = form.period6.options[Item].text;
+		alert (Result);
+	}
+</script>
 	</script>
 	
   </body>
