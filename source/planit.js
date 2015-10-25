@@ -6,8 +6,6 @@
 Variable declarations
 */
 
-var ap = 3, hnrs = 2, cp = 1;
-
 //Define the course catalog
 // 2D array
 
@@ -109,68 +107,6 @@ var catalog = [
 
 //array of courseweights
 var courseWeight=[1,1,1,2,1,1,2,1,2,1,3,3,1,3,1,2,3,1,1,2,3,1,1,2,3,1,2,3,3,3,1,1,2,3,3,1,1,3,1,3,3,3,3,1,1,2,3,3,1,1,2,3,3,1,1,2,3,3,1,1,2,3,3,1,1,2,3,3,1,2,1,1,1,1,1,2,3,3,1,1,2,3,1,1];
-
-//Meteor for days
-if (Meteor.isClient){
-
-	Meteor.startup(function(){
-	//generate the dropdown box
-	var sel = document.getElementById('ClassList');
-	for(var i = 0; i < catalog.length; i++) {
-		var opt = document.createElement('option');
-		opt.innerHTML = catalog[i];
-		opt.value = catalog[i];
-		sel.appendChild(opt);
-	}
 	
-	var sel = document.getElementById('ClassList2');
-	for(var i = 0; i < catalog.length; i++) {
-		var opt = document.createElement('option');
-		opt.innerHTML = catalog[i];
-		opt.value = catalog[i];
-		sel.appendChild(opt);
-	}
 	
-	var sel = document.getElementById('ClassList3');
-	for(var i = 0; i < catalog.length; i++) {
-		var opt = document.createElement('option');
-		opt.innerHTML = catalog[i];
-		opt.value = catalog[i];
-		sel.appendChild(opt);
-	}
-	
-	var sel = document.getElementById('ClassList4');
-	for(var i = 0; i < catalog.length; i++) {
-		var opt = document.createElement('option');
-		opt.innerHTML = catalog[i];
-		opt.value = catalog[i];
-		sel.appendChild(opt);
-	}
-	
-	var sel = document.getElementById('ClassList5');
-	for(var i = 0; i < catalog.length; i++) {
-		var opt = document.createElement('option');
-		opt.innerHTML = catalog[i];
-		opt.value = catalog[i];
-		sel.appendChild(opt);
-	}
-	
-	var sel = document.getElementById('ClassList6');
-	for(var i = 0; i < catalog.length; i++) {
-		var opt = document.createElement('option');
-		opt.innerHTML = catalog[i];
-		opt.value = catalog[i];
-		sel.appendChild(opt);
-	}
-	
-	var sel = document.getElementById('ClassList7');
-	for(var i = 0; i < catalog.length; i++) {
-		var opt = document.createElement('option');
-		opt.innerHTML = catalog[i];
-		opt.value = catalog[i];
-		sel.appendChild(opt);
-	}
-	});
-
-} 
 //end catalog array
