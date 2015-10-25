@@ -21,6 +21,11 @@ body {
   text-align: center;
 }
 
+.score {
+color: white;
+    
+}
+
 .container {
   max-width: 600px;
   margin: 0 auto;

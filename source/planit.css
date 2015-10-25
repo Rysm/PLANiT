@@ -15,7 +15,8 @@ body {
   right: 0;
 
   padding: 0;
-  margin: 0;
+  margin: auto;
+  width: 40%;
 
   font-size: 14px;
   text-align: center;
@@ -26,6 +27,13 @@ body {
   margin: 0 auto;
   min-height: 100%;
   background: white;
+    
+
+}
+
+.center {
+ margin:auto;
+ display: inline;
 }
 
 header {
@@ -48,17 +56,17 @@ h1 {
 }
 
 img.resize {
-  max-height: 15%;
-  max-width: 15%;
+  max-height: 28%;
+  max-width: 28%;
 }
 
 input.resize {
-  max-height: 10%;
-  max-width: 10%;
-  float:left;
-  text-align: center;
+  height: auto;
+  max-width: 30%;
+  float: left;
+  padding-left: 16px;
 }
-    
+
 img {
   position: relative;
   padding-top: 15px;
