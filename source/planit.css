@@ -1,7 +1,10 @@
 /* CSS declarations go here */
 body {
   font-family: sans-serif;
-  background-color: #FCFBE3;
+  background-image: url(planit-dirt-basic.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-color: #7DC5D6;
   background-attachment: fixed;
   font-family: 'Quicksand', sans-serif;
 
@@ -42,6 +45,24 @@ h1 {
   margin-bottom: 10px;
   display: inline-block;
   margin-right: 1em;
+}
+
+img.resize {
+  max-height: 15%;
+  max-width: 15%;
+}
+
+input.resize {
+  max-height: 10%;
+  max-width: 10%;
+  float:left;
+  text-align: center;
+}
+    
+img {
+  position: relative;
+  padding-top: 15px;
+  
 }
 
 form {
