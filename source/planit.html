@@ -11,6 +11,13 @@
 
 <body>
 
+<ul id="sidebar">
+<?php 
+if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar() ) : ?>
+	<li>{static sidebar item 1}</li>
+	<li>{static sidebar item 2}</li>
+	<?php endif; ?>
+	</ul>
 
 <!-- Image File to Replace Flower Progress -->
 <!img src= "PLANiT-spinning-flower.gif">
