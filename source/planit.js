@@ -6,8 +6,6 @@
 Variable declarations
 */
 
-var ap = 3, hnrs = 2, cp = 1;
-
 //Define the course catalog
 // 2D array
 
@@ -110,6 +108,7 @@ var catalog = [
 //array of courseweights
 var courseWeight=[1,1,1,2,1,1,2,1,2,1,3,3,1,3,1,2,3,1,1,2,3,1,1,2,3,1,2,3,3,3,1,1,2,3,3,1,1,3,1,3,3,3,3,1,1,2,3,3,1,1,2,3,3,1,1,2,3,3,1,1,2,3,3,1,1,2,3,3,1,2,1,1,1,1,1,2,3,3,1,1,2,3,1,1];
 
+	function filler(){
 	//generate the dropdown box
 	var sel = document.getElementById('ClassList');
 	for(var i = 0; i < catalog.length; i++) {
@@ -166,6 +165,7 @@ var courseWeight=[1,1,1,2,1,1,2,1,2,1,3,3,1,3,1,2,3,1,1,2,3,1,1,2,3,1,2,3,3,3,1,
 		opt.value = catalog[i];
 		sel.appendChild(opt);
 	}
-
+	}
+	onload = filler;
 } 
 //end catalog array
