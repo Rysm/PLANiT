@@ -4,67 +4,106 @@
 <head>
   <title>PLANiT</title>
   <link rel="stylesheet" type="text/css" href="planit.css">
+  <script src="planit.js" />
   <script src="https://code.jquery.com/jquery-2.1.4.min.js" />
   <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
 </head>
 
 <body>
-<body onload="myfunction()">
-	
 	
 	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
 		Select Your Classes: <select id = "ClassList"> </select>
 		<input type ="submit" value="Submit">
     </form>
-	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
-		Select Your Classes: <select id = "ClassList"> </select>
+		Select Your Classes: <select id = "ClassList2"> </select>
 		<input type ="submit" value="Submit">
     </form>
-	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
-		Select Your Classes: <select id = "ClassList"> </select>
+		Select Your Classes: <select id = "ClassList3"> </select>
 		<input type ="submit" value="Submit">
     </form>
-	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
-		Select Your Classes: <select id = "ClassList"> </select>
+		Select Your Classes: <select id = "ClassList4"> </select>
 		<input type ="submit" value="Submit">
     </form>
-	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
-		Select Your Classes: <select id = "ClassList"> </select>
+		Select Your Classes: <select id = "ClassList5"> </select>
 		<input type ="submit" value="Submit">
     </form>
-	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
-		Select Your Classes: <select id = "ClassList"> </select>
+		Select Your Classes: <select id = "ClassList6"> </select>
 		<input type ="submit" value="Submit">
     </form>
-	<!-- Dropdown to select classes -->
 	<form onsubmit = "courseChoose()"> 
-		Select Your Classes: <select id = "ClassList"> </select>
+		Select Your Classes: <select id = "ClassList7"> </select>
 		<input type ="submit" value="Submit">
     </form>
+	
+	<p>
+    <input type= "button" onclick="location.href='planit.html';" value="Return to Growth" />
+	</p>
 	
 	<script>
-	$(function(){ 
-	var sel = document.getElementById('ClassList');
+	//generate the dropdown box
+	var sel = document.getElementById("ClassList");
 	for(var i = 0; i < catalog.length; i++) {
 		var opt = document.createElement('option');
 		opt.innerHTML = catalog[i];
 		opt.value = catalog[i];
 		sel.appendChild(opt);
-		alert("Page is loaded");
 	} 
-	})
+		//generate the dropdown box
+	var sel = document.getElementById("ClassList2");
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	} 
+		//generate the dropdown box
+	var sel = document.getElementById("ClassList3");
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	} 
+		//generate the dropdown box
+	var sel = document.getElementById("ClassList4");
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	} 
+		//generate the dropdown box
+	var sel = document.getElementById("ClassList5");
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	} 
+		//generate the dropdown box
+	var sel = document.getElementById("ClassList6");
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	} 
+		//generate the dropdown box
+	var sel = document.getElementById("ClassList7");
+	for(var i = 0; i < catalog.length; i++) {
+		var opt = document.createElement('option');
+		opt.innerHTML = catalog[i];
+		opt.value = catalog[i];
+		sel.appendChild(opt);
+	} 
 	</script>
-	<p>
-		<code>
-			<input type= "button" onclick="location.href='planit.html';" value="Return to Growth" />
-			</code>
-	</p>
+	
   </body>
   </html>
   
