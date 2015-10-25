@@ -1,4 +1,4 @@
-//Source code for scoring individual catalog courses
+//Ultimate Source code for PLANiT
 
 //Written by Andy Wang
 
@@ -108,6 +108,7 @@ var catalog = [
 "Computers",
 ];
 
+//savior code of the javascripts
 if (Meteor.isClient){
 	Meteor.startup(function(){
 	//generate the dropdown box

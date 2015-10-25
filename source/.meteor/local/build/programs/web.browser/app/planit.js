@@ -55,15 +55,16 @@ var catalog = [                                                        // 14
 /* "Art 2",1, */                                                       //
 "Geography", "Computers"];                                             // 107
                                                                        //
-if (Meteor.isClient) {                                                 // 111
-	Meteor.startup(function () {                                          // 112
+//savior code of the javascripts                                       //
+if (Meteor.isClient) {                                                 // 112
+	Meteor.startup(function () {                                          // 113
 		//generate the dropdown box                                          //
-		var sel = document.getElementById('ClassList');                      // 114
-		for (var i = 0; i < catalog.length; i++) {                           // 115
-			var opt = document.createElement('option');                         // 116
-			opt.innerHTML = catalog[i];                                         // 117
-			opt.value = catalog[i];                                             // 118
-			sel.appendChild(opt);                                               // 119
+		var sel = document.getElementById('ClassList');                      // 115
+		for (var i = 0; i < catalog.length; i++) {                           // 116
+			var opt = document.createElement('option');                         // 117
+			opt.innerHTML = catalog[i];                                         // 118
+			opt.value = catalog[i];                                             // 119
+			sel.appendChild(opt);                                               // 120
 		}                                                                    //
 	});                                                                   //
 }                                                                      //
@@ -71,11 +72,11 @@ if (Meteor.isClient) {                                                 // 111
 //end catalog array                                                    //
                                                                        //
 //courses individual array                                             //
-var classes = 1;                                                       // 127
+var classes = 1;                                                       // 128
                                                                        //
-var course = [classes, 3]; //Seven classes max per schedule            // 129
+var course = [classes, 3]; //Seven classes max per schedule            // 130
                                                                        //
-var name = 0,                                                          // 131
+var name = 0,                                                          // 132
     difficulty = 0;                                                    //
 /////////////////////////////////////////////////////////////////////////
 
