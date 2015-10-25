@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+</head>
+<body>
+
+
+<button onclick="myFunction()">Get Data</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+	var ref = new Firebase("https://dazzling-fire-2300.firebaseio.com");
+	ref.set({
+		1:{
+		"Physical Education":"1",
+		"Pre-Algebra":"1",
+		"Algebra2/Trig":"1",
+		"H. Algebra2/Trig":"1",
+		"Trigonometry":"1",
+		"Geometry":"1",
+		"Honors Geometry":"2",
+		"Pre-Calculus":"1",
+		"Honors Pre-Calculus":"2",
+		"Calculus":"1",
+		"AP Calculus AB":"3",
+		"AP Calculus BC":"3",
+		"Statistics":"1",
+		"AP Statistics":"3",
+		"Biology":"1",
+		"Honors Biology":"2",
+		"AP Biology":"3",
+		"Integrated Sciences":"1",
+		"Chemistry":"1",
+		"Honors Chemistry":"2",
+		"Ap Chemistry":"3",
+		"Physics":"1",
+		"Honors Physics":"2",
+		"AP Physics":"3",
+		"AP Environmental Science":"3",
+		"AP Computer Science":"3",
+		"English":"1",
+		"Honors English":"2",
+		"AP English":"3",
+		"AP Literature":"3",
+		"World History":"1",
+		"U.S. History":"1",
+		"AP U.S. History":"3",
+		"European History":"1",
+		"AP European History":"3",
+		"AP Government":"3",
+		"AP Macroeconomics":"3",
+		"AP Microeconomics":"3",
+		"Spanish 1":"2",
+		"Spanish 2":"2",
+		"Spanish 3":"2",
+		"Spanish 4":"3",
+		"AP Spanish":"3",
+		"Japanese 1":"2",
+		"Japanese 2":"2",
+		"Japanese 3":"2",
+		"Japanese 4":"3",
+		"AP Japanese":"3",
+		"French 1":"2",
+		"French 2":"2",
+		"French 3":"3",
+		"French 4":"3",
+		"AP French":"3",
+		"Chinese 1":"2",
+		"Chinese 2":"2",
+		"Chinese 3":"3",
+		"Chinese 4":"3",
+		"AP Chinese":"3",
+		"Vietnamese 1":"2",
+		"Vietnamese 2":"2",
+		"Vietnamese 3":"2",
+		"Vietnamese 4":"3",
+		"AP Vietnamese":"3",
+		"Culinary Arts":"1",
+		"Culinary Arts 2":"1",
+		"Digital Photography":"1",
+		"Multimedia":"1",
+		"Animation":"1",
+		"Art":"1",
+		"Geography":"1",
+		"Computers":"1"
+		}
+	})
+}
+}
+</script>
+
+</body>
+</html>

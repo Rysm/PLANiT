@@ -2,6 +2,19 @@
 
 //Written by Andy Wang
 
+//Require Firebase
+var Firebase = require("firebase");
+//Firebase reference
+var myFirebaseRef = new Firebase("https://<YOUR-FIREBASE-APP>.firebaseio.com/");
+//Write a JSON 
+myFirebaseRef.set({
+  title: "Schedule",
+  });
+  //Reading data
+  myFirebaseRef.child("title").on("value", function(snapshot) {
+  alert(snapshot.val());  // Alerts "Schedule"
+});
+
 /*
 Variable declarations
 */
@@ -172,8 +185,5 @@ if (Meteor.isClient){
 	}
 	});
 
-
 } 
 //end catalog array
-
-//
