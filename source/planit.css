@@ -159,3 +159,10 @@ form{
     padding-bottom: 5px;
   }
 }
+input{
+	font-family: 'Quicksand', sans-serif;
+}
+
+form{
+	font-family: 'Quicksand', sans-serif;
+}
