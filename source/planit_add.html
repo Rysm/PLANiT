@@ -10,35 +10,38 @@
 </head>
 
 <body>
+	<script>
+	var scheduleRef = ref.child(choices);
+	</script>
 	
 	<!-- Dropdown to select classes -->
-	<form onsubmit = "courseChoose()"> 
+	<form onsubmit = "scheduleRef.push().set(Submit1)"> 
 		Select Your Classes: <select id = "ClassList"> </select>
-		<input type ="submit" value="Submit">
+		<input type ="submit" value="Submit1">
     </form>
-	<form onsubmit = "courseChoose()"> 
+	<form onsubmit = "scheduleRef.push().set(Submit2)"> 
 		Select Your Classes: <select id = "ClassList2"> </select>
-		<input type ="submit" value="Submit">
+		<input type ="submit" value="Submit2">
     </form>
-	<form onsubmit = "courseChoose()"> 
+	<form onsubmit = "scheduleRef.push().set(Submit3)"> 
 		Select Your Classes: <select id = "ClassList3"> </select>
-		<input type ="submit" value="Submit">
+		<input type ="submit" value="Submit3">
     </form>
-	<form onsubmit = "courseChoose()"> 
+	<form onsubmit = "scheduleRef.push().set(Submit4)"> 
 		Select Your Classes: <select id = "ClassList4"> </select>
-		<input type ="submit" value="Submit">
+		<input type ="submit" value="Submit4">
     </form>
-	<form onsubmit = "courseChoose()"> 
+	<form onsubmit = "scheduleRef.push().set(Submit5)"> 
 		Select Your Classes: <select id = "ClassList5"> </select>
-		<input type ="submit" value="Submit">
+		<input type ="submit" value="Submit5">
     </form>
-	<form onsubmit = "courseChoose()"> 
+	<form onsubmit = "scheduleRef.push().set(Submit6)"> 
 		Select Your Classes: <select id = "ClassList6"> </select>
-		<input type ="submit" value="Submit">
+		<input type ="submit" value="Submit6">
     </form>
-	<form onsubmit = "courseChoose()"> 
+	<form onsubmit = "scheduleRef.push().set(Submit7)"> 
 		Select Your Classes: <select id = "ClassList7"> </select>
-		<input type ="submit" value="Submit">
+		<input type ="submit" value="Submit7">
     </form>
 	
 	<p>

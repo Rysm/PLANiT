@@ -39,8 +39,8 @@
 function myFunction() {
     document.getElementById("catalog").innerHTML = "Course Catalog";
 	var ref = new Firebase("https://dazzling-fire-2300.firebaseio.com");
-	ref.set({
-		1:{
+	courseRef.set({
+		courses:{
 		"Physical Education":"1",
 		"Pre-Algebra":"1",
 		"Algebra2/Trig":"1",
